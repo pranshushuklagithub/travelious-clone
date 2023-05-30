@@ -69,13 +69,13 @@ export const SendEnquiryModal=({onClose,isOpen}) =>{
             </ModalBody>
   
             <ModalFooter>
-              <Button bg='tomato' mr={3} _hover={{ bg: 'green.300' }} onClick={()=>{
+              <Button mr={3} _hover={{ bg: 'green.300',color:"black" }} bg="tomato" color="white" onClick={()=>{
                 console.log(enquiry);
                 handleSpin();
               }}>
               {spin?<Spinner color='black'/>:"Send"}
               </Button>
-              <Button onClick={onClose} bg='tomato' mr={3} _hover={{ bg: 'green.300' }}>Cancel</Button>
+              <Button onClick={onClose}  mr={3} _hover={{ bg: 'green.300',color:"black" }} bg="tomato" color="white">Cancel</Button>
             </ModalFooter>
           </ModalContent>
         </Modal>
