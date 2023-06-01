@@ -3,9 +3,10 @@ import React from 'react'
 import {Modal,ModalOverlay,ModalContent,ModalHeader,ModalFooter,ModalBody,ModalCloseButton,FormLabel,Input,Button,FormControl,Spinner} from '@chakra-ui/react'
 import { useState } from 'react'
 
-export const SendEnquiryModal=({onClose,isOpen}) =>{
+export const SendEnquiryModal=({onClose,isOpen,adult,child}) =>{
+  console.log(adult,child)
   let[spin,setSpin] = useState(false)
-  let [enquiry,setEnquiry] = useState({});
+  let [enquiry,setEnquiry] = useState({adult,child});
   function handleSpin(){
     setTimeout(()=>{
       setSpin(false);
