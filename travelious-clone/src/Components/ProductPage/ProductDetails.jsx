@@ -15,22 +15,27 @@ const dispatch=useDispatch()
 const {id} = useParams();
 
 
-useEffect(()=>{
-  handleSingleProduct(productType,id)
-},[])
-
 const productType= useSelector((store)=>{
   return store.productReducer.productType
 })
 const property= useSelector((store)=>{
   return store.singleProductReducer.singleProduct
 })
-const cPrice = Math.floor((property.price*10)/100)
 
+useEffect(()=>{
+  handleSingleProduct(productType,id)
+},[])
+
+
+const cPrice = Math.floor((property.price*10)/100);
+var s = ""
 
 const handleSingleProduct=(type,id)=>{
     dispatch(singleProductAction(type,id))
 }
+
+
+
 
 
 
@@ -100,7 +105,7 @@ const handleSingleProduct=(type,id)=>{
                         </Box>
                         <Box display="flex" gap="10px" h="70px" alignItems="center"  p="10px">
                           <Image src="https://banbanjara.com/assets/images/location-icon.png" w="40px" h="40px"></Image>
-                          <Text fontSize="xl">Manali</Text>
+                          <Text fontSize="xl">India</Text>
                         </Box>
                   </Flex>
                 </Box>
