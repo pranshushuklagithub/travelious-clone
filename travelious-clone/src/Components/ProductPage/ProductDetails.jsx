@@ -140,7 +140,7 @@ const handleSingleProduct=(type,id)=>{
                 <Flex gap="20px">
                   <Button _hover={{ bg: 'green.300',color:"black" }} bg="tomato" color="white" size="lg">Book Now</Button>
                   <Button _hover={{ bg: 'green.300', color:"black"}} bg="tomato" color="white" onClick={onOpen} size="lg">Send Enquiry</Button>
-                  {onOpen?<SendEnquiryModal  onClose={onClose}  isOpen={isOpen}/>:false}
+                  {onOpen?<SendEnquiryModal  onClose={onClose}  isOpen={isOpen} adult={adult} child={child}/>:false}
                 </Flex>
             </Flex> 
 
@@ -182,9 +182,7 @@ const handleSingleProduct=(type,id)=>{
               </Flex>
 
               
-              <IconButton color='white' bg = "tomato" icon={<ChevronUpIcon />}  _hover={{ bg: 'green.300',color:"black" }} fontSize="xx-large"  position="-webkit-sticky"  overflow="revert" onClick={()=>{
-                    alert("hello")
-                  }}/>
+              
             </Box> 
 
             
