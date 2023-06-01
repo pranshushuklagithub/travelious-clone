@@ -27,8 +27,8 @@ export const productAction = (type,sort)=>{
 }
 export const singleProductAction = (type,id)=>{
     let url = "https://travelious-backend-server.onrender.com/"
-    if(type==="trekking/"){
-        url+="trekking"
+    if(type==="trekking"){
+        url+="trekking/"
     }else if(type==="camping"){
         url+="camping/"
     }else if(type==="activities"){

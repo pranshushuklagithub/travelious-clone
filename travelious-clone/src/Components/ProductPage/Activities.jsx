@@ -8,7 +8,7 @@ import { useEffect,useState } from "react";
 
 
 
-function Products() {
+function Activities() {
   const [sort,setSort] = useState("asc");
 
 
@@ -27,11 +27,12 @@ function Products() {
   const navigate= useNavigate();
 
   useEffect(()=>{
-    handleProducts(productType)
+    handleProducts("activities")
   },[sort])
   // console.log(products)
 
   const handleProducts = (type)=>{
+    disptach({type:"PRODUCT_TYPE",payload:type})
     disptach(productAction(type,sort))
   }
     
@@ -183,4 +184,4 @@ function Products() {
         )
 }
 
-export default Products;
+export default Activities;

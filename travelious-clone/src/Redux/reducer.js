@@ -2,7 +2,7 @@ const initialData={
     isLoading:false,
     isAuth:false,
     isError:false,
-    productType:"activities",
+    productType:"trekking",
     products:[],
     singleProduct:{},
     cart:[],
@@ -21,6 +21,10 @@ export const productReducer = (state=initialData,action)=>{
         return {
             ...state,isLoading:action.payload
         }
+    }else if(action.type==="PRODUCT_TYPE") {
+        return {
+            ...state,productType:action.payload
+        }
     }
     return state;
 }
@@ -36,6 +40,10 @@ export const singleProductReducer = (state=initialData,action)=>{
     }else if(action.type==="SINGLE_LOADING") {
         return {
             ...state,isLoading:action.payload
+        }
+    }else if(action.type==="PRODUCT_TYPE") {
+        return {
+            ...state,productType:action.payload
         }
     }
     return state;
