@@ -1,10 +1,11 @@
 
-import {Box, Button, Flex,Text, Image,  Spacer,Link,
+import {Box, Button, Flex,Text, Image,  Spacer,
  Center,} from '@chakra-ui/react'
   import {HamburgerIcon} from "@chakra-ui/icons"
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import "./nav.css"
+import { Link } from 'react-router-dom';
 library.add(faStar);
 
 
@@ -14,10 +15,13 @@ export function NavbarCode(){
         <Flex bg="#122722" as="nav" align="center" justify="space-between" pr="60px" pl="60px" pb="30px">
         <Box>
             {/* //image logo */}
-<Image 
+            <Link to="/">
+            <Image 
 w="80%" h="30%"
 mt="10px" src="https://banbanjara.com/assets/images/logo.svg"
 />
+            </Link>
+
         </Box>
         <Spacer/>
         <Box>
@@ -28,52 +32,52 @@ mt="10px" src="https://banbanjara.com/assets/images/logo.svg"
 <ul className="nav-links" >
 {/* 1st a */}
 <li>
-<Link  _hover={{ textDecorationColor:"white"}}><Text fontWeight={"500"} color={"#dbdde5"} fontSize={["10px","15px","15px","20px"]}>Trekking</Text></Link>
+<Link to="/trekking" _hover={{ textDecorationColor:"white"}}><Text fontWeight={"500"} color={"#dbdde5"} fontSize={["10px","15px","15px","20px"]}>Trekking</Text></Link>
 <Box className="mega-box">
     <Box className="content">
     {/* 1st row */}
         <Box className="row">
            <h1 className='head'>HIMACHAL</h1>
             <ul className='mega-links'>
-            <li><a><Text>Kheerganga Trek</Text></a></li>
-            <li><a><Text>Hampta Pass Trek</Text></a></li> 
-            <li><a><Text>Bhrigu Lake Trek</Text></a></li> 
-            <li><a><Text>Kheerganga Trek</Text></a></li>
-             <li><a><Text>Deo Tibba Trek</Text></a></li>
-              <li><a><Text>Sar Pass Trek </Text></a></li>
-               <li><a><Text>Buran Ghati trek</Text></a></li>
+            <li><Link><Text>Kheerganga Trek</Text></Link></li>
+            <li><Link><Text>Hampta Pass Trek</Text></Link></li> 
+            <li><Link><Text>Bhrigu Lake Trek</Text></Link></li> 
+            <li><Link><Text>Kheerganga Trek</Text></Link></li>
+             <li><Link><Text>Deo Tibba Trek</Text></Link></li>
+              <li><Link><Text>Sar Pass Trek </Text></Link></li>
+               <li><Link><Text>Buran Ghati trek</Text></Link></li>
                </ul>
         </Box>
         {/* 2nd row */}
         <Box className='row'>
             <h1>BANGLORE</h1>
             <ul className='mega-links'>
-                <li><a><Text>Savandurga Hill</Text></a></li>
-                <li><a><Text>Ramanagara</Text></a></li>
-                <li><a><Text> Nandi Hills</Text></a></li>
-                <li><a><Text>Skandagiri</Text></a></li>
-                <li><a><Text> Makalidurga</Text></a></li>
+                <li><Link><Text>Savandurga Hill</Text></Link></li>
+                <li><Link><Text>Ramanagara</Text></Link></li>
+                <li><Link><Text> Nandi Hills</Text></Link></li>
+                <li><Link><Text>Skandagiri</Text></Link></li>
+                <li><Link><Text> Makalidurga</Text></Link></li>
             </ul>
         </Box>
         {/* 3rd row */}
         <Box className='row'>
             <h1>MUMBAI</h1>
             <ul className='mega-links'>
-                <li><a><Text>Kalsubai Trek</Text></a></li>
-                <li><a><Text>Sandhan Valley trek</Text></a></li>
-                <li><a><Text>Rajmachi Trek</Text></a></li>
-                <li><a><Text>Prabalmachi Trek</Text></a></li>
-                <li><a><Text>Devkund Trek</Text></a></li>
+                <li><Link><Text>Kalsubai Trek</Text></Link></li>
+                <li><Link><Text>Sandhan Valley trek</Text></Link></li>
+                <li><Link><Text>Rajmachi Trek</Text></Link></li>
+                <li><Link><Text>Prabalmachi Trek</Text></Link></li>
+                <li><Link><Text>Devkund Trek</Text></Link></li>
             </ul>
         </Box>
         {/* 4th row */}
         <Box className='row'>
             <h1>EXPEDITIONS</h1>
             <ul className='mega-links'>
-                <li><a><Text>Everest Base Camp</Text></a></li>
-                <li><a><Text>Annapurna Base Camp</Text></a></li>
-                <li><a><Text>Goechala Trek</Text></a></li>
-                <li><a><Text>Chadar trek</Text></a></li>
+                <li><Link><Text>Everest Base Camp</Text></Link></li>
+                <li><Link><Text>Annapurna Base Camp</Text></Link></li>
+                <li><Link><Text>Goechala Trek</Text></Link></li>
+                <li><Link><Text>Chadar trek</Text></Link></li>
                 
             </ul>
         </Box>
@@ -81,11 +85,11 @@ mt="10px" src="https://banbanjara.com/assets/images/logo.svg"
         <Box className='row'>
             <h1>UTTARAKHAND</h1>
             <ul className='mega-links'>
-                <li><a><Text>Valley of Flowers</Text></a></li>
-                <li><a><Text>Kedarkantha Trek</Text></a></li>
-                <li><a><Text>Kedartal</Text></a></li>
-                <li><a><Text>Dayara Bugyal</Text></a></li>
-                <li><a><Text>Rudranath</Text></a></li>
+                <li><Link><Text>Valley of Flowers</Text></Link></li>
+                <li><Link><Text>Kedarkantha Trek</Text></Link></li>
+                <li><Link><Text>Kedartal</Text></Link></li>
+                <li><Link><Text>Dayara Bugyal</Text></Link></li>
+                <li><Link><Text>Rudranath</Text></Link></li>
             </ul>
         </Box>
 {/* 6th row */}
@@ -107,53 +111,54 @@ mt="10px" src="https://banbanjara.com/assets/images/logo.svg"
 </li>
 
 {/* 2nd a */}
+
 <li>
-<Link  _hover={{ textDecorationColor:"white"}}><Text  fontWeight={"500"} color={"#dbdde5"} fontSize={["10px","15px","15px","20px"]}>Tours</Text></Link>
+<Link to="/camping"  _hover={{ textDecorationColor:"white"}}><Text  fontWeight={"500"} color={"#dbdde5"} fontSize={["10px","15px","15px","20px"]}>Tours</Text></Link>
 <Box className="mega-box">
     <Box className="content">
     {/* 1st row */}
         <Box className="row">
             <h1>HIMACHAL</h1>
             <ul className='mega-links'>
-            <li><a><Text>Kullu Manali</Text></a></li>
-            <li><a><Text>Spiti Valley</Text></a></li> 
-            <li><a><Text>Shimla</Text></a></li> 
-            <li><a><Text>Parvati Valley</Text></a></li>
-             <li><a><Text>Tosh</Text></a></li>
-              <li><a><Text>Dalhousie </Text></a></li>
-               <li><a><Text>Dharamshala</Text></a></li>
+            <li><Link to="/camping"><Text>Kullu Manali</Text></Link></li>
+            <li><Link><Text>Spiti Valley</Text></Link></li> 
+            <li><Link><Text>Shimla</Text></Link></li> 
+            <li><Link><Text>Parvati Valley</Text></Link></li>
+             <li><Link><Text>Tosh</Text></Link></li>
+              <li><Link><Text>Dalhousie </Text></Link></li>
+               <li><Link><Text>Dharamshala</Text></Link></li>
                </ul>
         </Box>
         {/* 2nd row */}
         <Box className='row'>
             <h1>UTTRAKHAND</h1>
             <ul className='mega-links'>
-                <li><a><Text>Rishikesh</Text></a></li>
-                <li><a><Text>Kedaranath Yatra</Text></a></li>
-                <li><a><Text>Rishikesh food Walk</Text></a></li>
-                <li><a><Text>Jim Corbett</Text></a></li>
-                <li><a><Text>Rishikesh Spiritual</Text></a></li>
+                <li><Link><Text>Rishikesh</Text></Link></li>
+                <li><Link><Text>Kedaranath Yatra</Text></Link></li>
+                <li><Link><Text>Rishikesh food Walk</Text></Link></li>
+                <li><Link><Text>Jim Corbett</Text></Link></li>
+                <li><Link><Text>Rishikesh Spiritual</Text></Link></li>
             </ul>
         </Box>
         {/* 3rd row */}
         <Box className='row'>
             <h1>LADHAK</h1>
             <ul className='mega-links'>
-                <li><a><Text>Manali To Srinagar</Text></a></li>
-                <li><a><Text>Leh Ladhak From Delhi</Text></a></li>
-                <li><a><Text>Srinagar To Leh</Text></a></li>
-                <li><a><Text>Leh SightSeeing</Text></a></li>
-                <li><a><Text>Leh urtuk Village</Text></a></li>
+                <li><Link><Text>Manali To Srinagar</Text></Link></li>
+                <li><Link><Text>Leh Ladhak From Delhi</Text></Link></li>
+                <li><Link><Text>Srinagar To Leh</Text></Link></li>
+                <li><Link><Text>Leh SightSeeing</Text></Link></li>
+                <li><Link><Text>Leh urtuk Village</Text></Link></li>
             </ul>
         </Box>
         {/* 4th row */}
         <Box className='row'>
             <h1>ANDAMAN</h1>
             <ul className='mega-links'>
-                <li><a><Text>Backpacking tour</Text></a></li>
-                <li><a><Text>Honeymoon Tour</Text></a></li>
-                <li><a><Text>Romantic Candlelight Beachside Honeymoon 4 Days Honeymoon</Text></a></li>
-                <li><a><Text>8 Days Offsbeat</Text></a></li>
+                <li><Link><Text>Backpacking tour</Text></Link></li>
+                <li><Link><Text>Honeymoon Tour</Text></Link></li>
+                <li><Link><Text>Romantic Candlelight Beachside Honeymoon 4 Days Honeymoon</Text></Link></li>
+                <li><Link><Text>8 Days Offsbeat</Text></Link></li>
                 
             </ul>
         </Box>
@@ -161,27 +166,27 @@ mt="10px" src="https://banbanjara.com/assets/images/logo.svg"
         <Box className='row'>
             <h1>DELHI TO DELHI</h1>
             <ul className='mega-links'>
-                <li><a><Text>Kasol Kheerganga</Text></a></li>
-                <li><a><Text>Mcleodganj Triund</Text></a></li>
-                <li><a><Text>Manali Lahaul</Text></a></li>
-                <li><a><Text>Jibhi Tirthan</Text></a></li>
-                <li><a><Text>Rudranath</Text></a></li>
+                <li><Link><Text>Kasol Kheerganga</Text></Link></li>
+                <li><Link><Text>Mcleodganj Triund</Text></Link></li>
+                <li><Link><Text>Manali Lahaul</Text></Link></li>
+                <li><Link><Text>Jibhi Tirthan</Text></Link></li>
+                <li><Link><Text>Rudranath</Text></Link></li>
             </ul>
         </Box>
 {/* 6th row */}
 <Box className='row'>
 <h1>GOA</h1>
 <ul className='mega-links'>
-    <li><a><Text>4 Days Goa</Text></a></li>
-    <li><a><Text>Grande Island</Text></a></li>
+    <li><Link><Text>4 Days Goa</Text></Link></li>
+    <li><Link><Text>Grande Island</Text></Link></li>
 </ul>
 </Box>
 {/* 7th row */}
 <Box className='row'>
 <h1>SPITI</h1>
 <ul className='mega-links'>
-    <li><a><Text>Spiti From Manali</Text></a></li>
-    <li><a><Text>Spiti Circuit</Text></a></li>
+    <li><Link><Text>Spiti From Manali</Text></Link></li>
+    <li><Link><Text>Spiti Circuit</Text></Link></li>
 </ul>
 </Box>
     </Box>
@@ -189,6 +194,8 @@ mt="10px" src="https://banbanjara.com/assets/images/logo.svg"
     
 </Box>
 </li>
+
+
 {/* 3rd a */}
 <li >
     <Link  _hover={{ textDecorationColor:"white"}}><Text  fontWeight={"500"} color={"#dbdde5"} fontSize={["10px","15px","15px","20px"]}>About us</Text></Link>
@@ -220,7 +227,7 @@ mt="10px" src="https://banbanjara.com/assets/images/logo.svg"
 </li>
 {/* 4th a */}
 <li>
-<Link  _hover={{ textDecorationColor:"white"}}><Text  fontWeight={"500"} color={"#dbdde5"} fontSize={["10px","15px","15px","20px"]}>Services</Text></Link>
+<Link to="/activities"  _hover={{ textDecorationColor:"white"}}><Text  fontWeight={"500"} color={"#dbdde5"} fontSize={["10px","15px","15px","20px"]}>Services</Text></Link>
 </li>
  {/* 6th a */}
 <li>
