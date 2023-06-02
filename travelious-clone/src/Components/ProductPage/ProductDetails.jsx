@@ -145,7 +145,7 @@ const handleSingleProduct=(type,id)=>{
             </Flex> 
 
             <Box  boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px" w="95%" m="auto">
-              <Accordian/>
+              <Accordian img={property.image}/>
 
 
               <Flex w="100%" justify="space-between" gap="20px" p="20px">
