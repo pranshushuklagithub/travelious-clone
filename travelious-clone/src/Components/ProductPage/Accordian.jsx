@@ -17,7 +17,7 @@ export const Accordian=({img})=>{
       <AccordionButton _hover={{ bg: 'green.300',color:"black" }} fontSize="xx-large" textAlign="center" justifyContent="center" bg="tomato" color="white" onClick={()=>{
         setOption({stayType:!option.stayType,meals:false,activity:false,inclusion:false,thingToCarry:false})
       }} borderRadius="20px">
-      Stay Typ
+      Stay Type
       </AccordionButton>
     </h2>
     {
