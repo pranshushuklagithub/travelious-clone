@@ -1,8 +1,9 @@
 import { Routes,Route } from "react-router-dom";
-import ProductDetails from "../Components/ProductPage/ProductDetails";
-import Trekking from "../Components/ProductPage/Trekking";
-import Camping from "../Components/ProductPage/Camping";
-import Activities from "../Components/ProductPage/Activities";
+import ProductDetails from "../components/ProductPage/ProductDetails";
+import Trekking from "../components/ProductPage/Trekking";
+import Camping from "../components/ProductPage/Camping";
+import Activities from "../components/ProductPage/Activities";
+import Navbar from "../homePage"
 
 function Allroutes(){
     return (
@@ -11,6 +12,7 @@ function Allroutes(){
             <Route path="/trekking" element={<Trekking/>}/>
             <Route path="/camping" element={<Camping/>}/>
             <Route path="/activities" element={<Activities/>}/>
+            <Route path="/" element={<Navbar/>} />
         </Routes>
     )
 }
