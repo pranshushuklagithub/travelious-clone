@@ -1,7 +1,7 @@
 import {Accordion,AccordionItem,AccordionButton,AccordionPanel,Box,ListItem,UnorderedList,Image,Text} from '@chakra-ui/react'
 import { useState } from 'react'
 
-export const Accordian=()=>{
+export const Accordian=({img})=>{
     let[option,setOption] = useState({
         stayType:false,
         meals:false,
@@ -30,7 +30,7 @@ export const Accordian=()=>{
             <ListItem><Text color="black" fontSize="xl">All our provisions follow the strictest standards of hygiene.</Text></ListItem>
         </UnorderedList>
     
-    </AccordionPanel>:<Image src='https://bit.ly/2Z4KKcF' w="100%" h="300px" mt="20px" borderRadius="20px"></Image>}
+    </AccordionPanel>:<Image src={img} w="100%" h="300px" mt="20px" borderRadius="20px"></Image>}
     
   </AccordionItem>
 
@@ -49,7 +49,7 @@ export const Accordian=()=>{
             <ListItem><Text color="black" fontSize="xl">We will provide you with adequate camping gear like waterproof tents and sleeping bags</Text></ListItem>
             <ListItem><Text color="black" fontSize="xl">All our provisions follow the strictest standards of hygiene.</Text></ListItem>
         </UnorderedList>
-        </AccordionPanel>:<Image src='https://bit.ly/2Z4KKcF' w="100%" h="300px" mt="20px" borderRadius="20px"></Image>
+        </AccordionPanel>:<Image src={img} w="100%" h="300px" mt="20px" borderRadius="20px"></Image>
     }
   </AccordionItem>
 
@@ -68,7 +68,7 @@ export const Accordian=()=>{
             <ListItem><Text color="black" fontSize="xl">We will provide you with adequate camping gear like waterproof tents and sleeping bags</Text></ListItem>
             <ListItem><Text color="black" fontSize="xl">All our provisions follow the strictest standards of hygiene.</Text></ListItem>
         </UnorderedList>
-        </AccordionPanel>:<Image src='https://bit.ly/2Z4KKcF' w="100%" h="300px" mt="20px" borderRadius="20px"></Image>
+        </AccordionPanel>:<Image src={img} w="100%" h="300px" mt="20px" borderRadius="20px"></Image>
     }
   </AccordionItem>
 
@@ -88,7 +88,7 @@ export const Accordian=()=>{
             <ListItem><Text color="black" fontSize="xl">We will provide you with adequate camping gear like waterproof tents and sleeping bags</Text></ListItem>
             <ListItem><Text color="black" fontSize="xl">All our provisions follow the strictest standards of hygiene.</Text></ListItem>
         </UnorderedList>
-        </AccordionPanel>:<Image src='https://bit.ly/2Z4KKcF' w="100%" h="300px" mt="20px" borderRadius="20px"></Image>
+        </AccordionPanel>:<Image src={img} w="100%" h="300px" mt="20px" borderRadius="20px"></Image>
     }
   </AccordionItem>
   <AccordionItem w="33%" p="15px">
@@ -106,7 +106,7 @@ export const Accordian=()=>{
             <ListItem><Text color="black" fontSize="xl">We will provide you with adequate camping gear like waterproof tents and sleeping bags</Text></ListItem>
             <ListItem><Text color="black" fontSize="xl">All our provisions follow the strictest standards of hygiene.</Text></ListItem>
         </UnorderedList>
-        </AccordionPanel>:<Image src='https://bit.ly/2Z4KKcF' w="100%" h="300px" mt="20px" borderRadius="20px"></Image>
+        </AccordionPanel>:<Image src={img} w="100%" h="300px" mt="20px" borderRadius="20px"></Image>
     }
   </AccordionItem>
 </Accordion>
