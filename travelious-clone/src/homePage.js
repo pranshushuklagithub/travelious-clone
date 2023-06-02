@@ -2,13 +2,13 @@ import {Box,  } from '@chakra-ui/react'
   import "./homepage.css"
 
 
-import { CommentBox, MainFront, PopularAttraction, PopularDestination } from './components/All';
+import { CommentBox, MainFront, PopularAttraction, PopularDestination } from './Components/All';
   import 'react-multi-carousel/lib/styles.css';
 
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { Experience, SubscribePart } from './components/All';
+import { Experience, SubscribePart } from './Components/All';
 
 library.add(faStar);
 
