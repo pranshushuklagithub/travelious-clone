@@ -30,7 +30,7 @@ function Camping() {
   // console.log(products)
 
   const handleProducts = (type)=>{
-    disptach({type:"PRODUCT_TYPE",payload:"camping"})
+    disptach({type:"PRODUCT_TYPE",payload:type})
     disptach(productAction(type,sort))
   }
     
