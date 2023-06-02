@@ -5,6 +5,7 @@ import Allroutes from './Allroutes/Allroutes';
 function App() {
   return (
     <div className="App">
+    <Navbar/>
       <Allroutes/>
     </div>
   );
