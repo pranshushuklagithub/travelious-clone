@@ -889,7 +889,7 @@ Dont't wait until tomorrow, discover your adventure now and fell the sensation o
     
     </Box>
     <Box w="60%">
-<Image src="https://img.freepik.com/free-photo/front-view-young-male-with-backpack-preparing-hiking_179666-41653.jpg?w=1060&t=st=1684946091~exp=1684946691~hmac=712076e669e63e517c3f6de12d21ee4da1aefd1aa2d5707e44f798c08e616874" />
+<Image w="100%" src="https://img.freepik.com/free-photo/front-view-young-male-with-backpack-preparing-hiking_179666-41653.jpg?w=1060&t=st=1684946091~exp=1684946691~hmac=712076e669e63e517c3f6de12d21ee4da1aefd1aa2d5707e44f798c08e616874" />
     </Box>
   </Flex>
   )
