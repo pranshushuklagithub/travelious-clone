@@ -1,8 +1,9 @@
 import {Box, Button, Flex,Text, Image,  Spacer, 
-    Link, Card, CardHeader, CardBody, CardFooter,Grid,Stack,Heading,Divider,ButtonGroup,
+  Card, CardHeader, CardBody, CardFooter,Grid,Stack,Heading,Divider,ButtonGroup,
  
     Center,
     GridItem,} from '@chakra-ui/react';
+    import { Link } from 'react-router-dom';
     import Carousel from 'react-multi-carousel';
     import 'react-multi-carousel/lib/styles.css';
     import { faStar } from '@fortawesome/free-solid-svg-icons';
@@ -297,11 +298,11 @@ export function PopularAttraction(){
     <Image
       src='https://youimg1.tripcdn.com/target/0105212000a4sy6yy5993_W_1000_750_Q80.jpg?proc=source%2ftrip&proc=source%2ftrip'
       alt='Kedarnath trip'
-      borderRadius='lg'
+      borderRadius='lg' w="100%" h="230px"
     />
-    <Stack mt='6' spacing='3'>
+    <Stack mt='5' spacing='3'>
       <Heading 
-       fontSize={"30px"} color="#43464f" fontFamily={"cursive"} mt="-10px">
+       fontSize={"30px"} color="#43464f" fontFamily={"cursive"} mt="-12px">
       SEA LIFE Bangkok Ocean World
        </Heading>
     
@@ -344,9 +345,12 @@ export function PopularAttraction(){
 </Box>
 {/* <Spacer/> */}
 <Box>
+<Link to="/camping">
 <Button variant='solid'  bg="#e2660f" color="white" _hover={{ color: "#e2660f","bg":"white",border:"2px solid #e2660f"}}>
         Buy now
       </Button>
+</Link>
+
 </Box>
   </Flex>
  
@@ -355,13 +359,13 @@ export function PopularAttraction(){
 </Card>
 </GridItem>
 
-<GridItem>
+<GridItem >
 <Card >
   <CardBody>
     <Image
       src='https://youimg1.tripcdn.com/target/100s0q000000gg1fs4B9F_W_1000_750_Q80.jpg?proc=source%2ftrip&proc=source%2ftrip'
       alt='Kedarnath trip'
-      borderRadius='lg'
+      borderRadius='lg' w="100%" h="230px"
     />
     <Stack mt='6' spacing='3'>
       <Heading 
@@ -408,9 +412,12 @@ export function PopularAttraction(){
 </Box>
 {/* <Spacer/> */}
 <Box>
+<Link to="/activities">
 <Button variant='solid'  bg="#e2660f" color="white" _hover={{ color: "#e2660f","bg":"white",border:"2px solid #e2660f"}}>
         Buy now
       </Button>
+</Link>
+
 </Box>
   </Flex>
  
@@ -419,18 +426,18 @@ export function PopularAttraction(){
 </Card>
 </GridItem>
 
-<GridItem>
+<GridItem >
 <Card >
   <CardBody>
     <Image
       src='https://youimg1.tripcdn.com/target/1lo3112000axoz3wj2934_W_1000_750_Q80.png?proc=source%2ftrip&proc=source%2ftrip'
       alt='Kedarnath trip'
-      borderRadius='lg'
+      borderRadius='lg' w="100%" h="230px"
     />
     <Stack mt='6' spacing='3'>
       <Heading 
        fontSize={"30px"} color="#43464f" fontFamily={"cursive"}>
-      Ice Magic: Fantasy on Ice
+      Ice Magic
        </Heading>
     
  
@@ -472,9 +479,12 @@ export function PopularAttraction(){
 </Box>
 {/* <Spacer/> */}
 <Box>
+<Link to="/trekking">
 <Button variant='solid'  bg="#e2660f" color="white" _hover={{ color: "#e2660f","bg":"white",border:"2px solid #e2660f"}}>
         Buy now
       </Button>
+</Link>
+
 </Box>
   </Flex>
  
@@ -570,9 +580,13 @@ gap="30px"  alignSelf="center" justifyContent="center"
 </Box>
 {/* <Spacer/> */}
 <Box>
+<Link to="/trekking">
+
 <Button variant='solid'  bg="#e2660f" color="white" _hover={{ color: "#e2660f","bg":"white",border:"2px solid #e2660f"}}>
         Buy now
       </Button>
+</Link>
+
 </Box>
   </Flex>
  
@@ -620,9 +634,12 @@ gap="30px"  alignSelf="center" justifyContent="center"
 </Box>
 {/* <Spacer/> */}
 <Box>
+<Link to="/camping">
 <Button variant='solid'  bg="#e2660f" color="white" _hover={{ color: "#e2660f","bg":"white",border:"2px solid #e2660f"}}>
         Buy now
       </Button>
+</Link>
+
 </Box>
   </Flex>
  
@@ -668,9 +685,12 @@ gap="30px"  alignSelf="center" justifyContent="center"
 </Box>
 {/* <Spacer/> */}
 <Box>
+<Link to="/activities">
 <Button variant='solid'  bg="#e2660f" color="white" _hover={{ color: "#e2660f","bg":"white",border:"2px solid #e2660f"}}>
         Buy now
       </Button>
+</Link>
+
 </Box>
   </Flex>
  
@@ -716,9 +736,12 @@ gap="30px"  alignSelf="center" justifyContent="center"
 </Box>
 {/* <Spacer/> */}
 <Box>
+<Link to="/trekking">
 <Button variant='solid'  bg="#e2660f" color="white" _hover={{ color: "#e2660f","bg":"white",border:"2px solid #e2660f"}}>
         Buy now
       </Button>
+</Link>
+
 </Box>
   </Flex>
  
@@ -765,9 +788,12 @@ gap="30px"  alignSelf="center" justifyContent="center"
 </Box>
 {/* <Spacer/> */}
 <Box>
+<Link to="/activities">
 <Button variant='solid'  bg="#e2660f" color="white" _hover={{ color: "#e2660f","bg":"white",border:"2px solid #e2660f"}}>
         Buy now
       </Button>
+</Link>
+
 </Box>
   </Flex>
  
@@ -813,9 +839,12 @@ gap="30px"  alignSelf="center" justifyContent="center"
 </Box>
 {/* <Spacer/> */}
 <Box>
+<Link to="/camping">
 <Button variant='solid'  bg="#e2660f" color="white" _hover={{ color: "#e2660f","bg":"white",border:"2px solid #e2660f"}}>
         Buy now
       </Button>
+</Link>
+
 </Box>
   </Flex>
  
@@ -861,9 +890,12 @@ gap="30px"  alignSelf="center" justifyContent="center"
 </Box>
 {/* <Spacer/> */}
 <Box>
+<Link to="/activities">
 <Button variant='solid'  bg="#e2660f" color="white" _hover={{ color: "#e2660f","bg":"white",border:"2px solid #e2660f"}}>
         Buy now
       </Button>
+</Link>
+
 </Box>
   </Flex>
  
@@ -889,7 +921,7 @@ Dont't wait until tomorrow, discover your adventure now and fell the sensation o
     
     </Box>
     <Box w="60%">
-<Image src="https://img.freepik.com/free-photo/front-view-young-male-with-backpack-preparing-hiking_179666-41653.jpg?w=1060&t=st=1684946091~exp=1684946691~hmac=712076e669e63e517c3f6de12d21ee4da1aefd1aa2d5707e44f798c08e616874" />
+<Image w="100%" src="https://img.freepik.com/free-photo/front-view-young-male-with-backpack-preparing-hiking_179666-41653.jpg?w=1060&t=st=1684946091~exp=1684946691~hmac=712076e669e63e517c3f6de12d21ee4da1aefd1aa2d5707e44f798c08e616874" />
     </Box>
   </Flex>
   )
