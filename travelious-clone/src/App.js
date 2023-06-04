@@ -9,6 +9,7 @@ function App() {
     <div className="App">
  <NavbarCode/>
       <Allroutes/>
+    
       <Footer/>
     </div>
   );
