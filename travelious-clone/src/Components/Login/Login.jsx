@@ -1,8 +1,11 @@
 
 import React, { useState } from 'react';
 import './Login.css';
+import './Login.css'
+// import './Login.css'
+// import './Login.css'
 import { useNavigate } from 'react-router-dom';
-import { productReducer } from '../Redux/reducer';
+import { productReducer } from '../../Redux/reducer';
 
 
 
@@ -16,7 +19,7 @@ const LoginSignupPage = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [captcha, setCaptcha] = useState('');
 
-  const nav= useNavigate();
+   const nav= useNavigate();
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -50,10 +53,12 @@ const LoginSignupPage = () => {
       // Login
       console.log('Logged in successfully!');
       alert("Logged in successfully!")
+       nav("/");
     } else {
       // Signup
       alert("Signed up successfully!")
       console.log('Signed up successfully!');
+      
     }
 
     
@@ -67,7 +72,7 @@ const LoginSignupPage = () => {
 
   const handleToggleForm = () => {
     setIsLogin(!isLogin);
-    nav("/");
+    // nav("/");
   };
   
 
@@ -137,6 +142,7 @@ const LoginSignupPage = () => {
           {isLogin ? "Don't have an account? " : 'Already have an account? '}
           <button onClick={handleToggleForm}>
             {isLogin ? 'Sign Up' : 'Login'}
+          
           </button>
         </p>
       </div>
