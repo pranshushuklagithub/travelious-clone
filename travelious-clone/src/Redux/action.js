@@ -3,6 +3,8 @@ import axios from "axios";
 
 export const productAction = (type,sort)=>{
     let url = "https://travelious-backend-server.onrender.com/"
+    
+
     if(type==="trekking"){
         url+="trekking/"
     }else if(type==="camping"){
@@ -10,7 +12,12 @@ export const productAction = (type,sort)=>{
     }else if(type==="activities"){
         url+="activities/"
     }
-    url+=`?_sort=price&_order=${sort}`
+    if(sort!=="") {
+        url+=`?_sort=price&_order=${sort}`
+    }
+    
+    
+    
     
     return (dispatch)=>{
         dispatch({type:"LOADING",payload:true})
