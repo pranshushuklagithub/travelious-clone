@@ -42,7 +42,7 @@ export default function  ConfirmationPage() {
     <span>Total number of people :</span> {data.totalMembers}<br></br><br></br>
     <span>Date-Timing :</span> {data.date}<br></br><br></br>
     <span>Total Price :</span> {data.price}<br></br><br></br>
-    <span>Discount : 10%</span><br></br><br></br>
+    <span>Discount : 10%</span><br></br>
     </Box>
     
 </Stack>
