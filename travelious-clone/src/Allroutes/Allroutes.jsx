@@ -4,8 +4,10 @@ import Trekking from "../Components/ProductPage/Trekking";
 import Camping from "../Components/ProductPage/Camping";
 import Activities from "../Components/ProductPage/Activities";
 import Navbar from "../homePage"
+import ConfirmationPage from "../Components/ProductPage/ConfirmationPage";
 import LoginSignupPage from "../Components/Login";
 import PaymentDetails from "../Components/PaymentDetails";
+
 function Allroutes(){
     return (
         <Routes>
@@ -14,6 +16,7 @@ function Allroutes(){
             <Route path="/camping" element={<Camping/>}/>
             <Route path="/activities" element={<Activities/>}/>
             <Route path="/" element={<Navbar/>} />
+            <Route path="/confirmation" element={<ConfirmationPage/>} />
             <Route path="/login" element= {<LoginSignupPage/>}/>
             <Route path="/payment" element= {<PaymentDetails/>} />
         </Routes>
