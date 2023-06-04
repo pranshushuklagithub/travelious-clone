@@ -5,7 +5,7 @@ import Camping from "../Components/ProductPage/Camping";
 import Activities from "../Components/ProductPage/Activities";
 import Navbar from "../homePage"
 import LoginSignupPage from "../Components/Login";
-
+import PaymentDetails from "../Components/PaymentDetails";
 function Allroutes(){
     return (
         <Routes>
@@ -15,6 +15,7 @@ function Allroutes(){
             <Route path="/activities" element={<Activities/>}/>
             <Route path="/" element={<Navbar/>} />
             <Route path="/login" element= {<LoginSignupPage/>}/>
+            <Route path="/payment" element= {<PaymentDetails/>} />
         </Routes>
     )
 }
