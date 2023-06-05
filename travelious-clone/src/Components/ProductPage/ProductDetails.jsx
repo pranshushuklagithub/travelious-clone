@@ -1,5 +1,5 @@
-import { Box,Flex,Grid,Heading,Image,Text,Input,Button,useDisclosure,UnorderedList,ListItem,IconButton } from "@chakra-ui/react";
-import {StarIcon,AddIcon,MinusIcon,ChevronUpIcon, SearchIcon,} from "@chakra-ui/icons"
+import { Box,Flex,SimpleGrid,Heading,Image,Text,Input,Button,useDisclosure,UnorderedList,ListItem,} from "@chakra-ui/react";
+import {StarIcon,AddIcon,MinusIcon} from "@chakra-ui/icons"
 import { useState,useEffect } from "react";
 import { SendEnquiryModal } from "./SendEnquiryModal";
 import { Accordian } from "./Accordian";
@@ -48,8 +48,8 @@ const handleSingleProduct=(type,id)=>{
     reviewCount: 34,
     rating: 4,
   }
-    return <Box >
-      <Flex p="20px" boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"  gap="20px" m="auto" justifyContent="space-between">
+    return <Box w = {['0em', '48em', '62em', '80em', '96em',"126em"]} fontSize={['xsm','sm',"md"]}>
+      <Flex p="20px" boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"  gap="20px" m="auto" justifyContent="space-between" w="95%">
                 <Box  w="60%"  textAlign="left" p="30px">
                     <Image src={property.image} borderRadius="20px" w="100%" mb="20px"></Image>
                     <Text mb="20px">{prop.description}</Text>
@@ -76,7 +76,7 @@ const handleSingleProduct=(type,id)=>{
                   <Heading display="flex" gap="10px"> ₹ <Text textDecoration="line-through">{property.price+cPrice}</Text></Heading>
                   </Flex>
                   <Text fontSize="xl">Per adult</Text>
-                  <Grid gridTemplateColumns="repeat(2,1fr)" w="60%" p="20px" h="350px" justifyContent="space-evenly">
+                  <SimpleGrid columns={[1,2]} w="60%" p="20px" h={["200px","350px"]} justifyContent="space-evenly">
                     <Box boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px" p="20px" textAlign="center">
                         <Image src="https://admin.banbanjara.com/public/frontend/uploads/masters/1560171111727-accommodationicon.svg" m="auto" mb = "40px" h="40px"></Image>
                         <Text>Accommodation</Text>
@@ -93,28 +93,28 @@ const handleSingleProduct=(type,id)=>{
                         <Image src="https://admin.banbanjara.com/public/frontend/uploads/masters/1560171393204-mealicon.svg" m="auto" mb = "40px" h="40px"></Image>
                         <Text>Meals</Text>
                     </Box>
-                  </Grid>
-                  <Flex  w="100%" h="70px" gap="10px" justify="space-evenly" boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px" ml="20px">
-                        <Box display="flex" gap="10px" h="70px" alignItems="center"  p="10px">
-                          <Image src="https://banbanjara.com/assets/images/day-icon.png" w="40px" h="40px"></Image>
-                          <Text fontSize="xl">4 Days  |</Text>
+                  </SimpleGrid>
+                  <Flex  w="100%" h="70px" gap="10px" justify="space-evenly" boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px" ml="20px" fontSize={["sm","md","xl"]}>
+                        <Box display="flex" gap="10px" h="70px" alignItems="center"  p="10px"  w="100%">
+                          <Image src="https://banbanjara.com/assets/images/day-icon.png" w="20%" h="40px"></Image>
+                          <Text>4 Days  |</Text>
                         </Box>
-                        <Box display="flex" gap="10px" h="70px" alignItems="center"  p="10px">
-                          <Image src="https://banbanjara.com/assets/images/night-icon.png" w="40px" h="40px"></Image>
-                          <Text fontSize="xl">3 Nights  |</Text>
+                        <Box display="flex" gap="10px" h="70px" alignItems="center"  p="10px"  w="100%">
+                          <Image src="https://banbanjara.com/assets/images/night-icon.png" w="20%" h="40px"></Image>
+                          <Text>3 Nights  |</Text>
                         </Box>
-                        <Box display="flex" gap="10px" h="70px" alignItems="center"  p="10px">
-                          <Image src="https://banbanjara.com/assets/images/location-icon.png" w="40px" h="40px"></Image>
-                          <Text fontSize="xl">India</Text>
+                        <Box display="flex" gap="10px" h="70px" alignItems="center"  p="10px"  w="100%">
+                          <Image src="https://banbanjara.com/assets/images/location-icon.png" w="20%" h="40px"></Image>
+                          <Text >India</Text>
                         </Box>
                   </Flex>
                 </Box>
             </Flex>
 
-            <Flex gap="20px" bg="teal" alignItems="center" p="20px" h="90px" justify="space-evenly">
+            <Flex gap="20px" bg="teal" alignItems="center" p="20px" h="90px" justify="space-evenly" w="100%" fontSize={["sm","md","lg"]}>
                 <Input placeholder="Select Date and Time" size="md" type="datetime-local" w="15%" borderColor="black" bg="white"/>
-                <Flex w="120px" h="50px">
-                  <Text mr="10px" fontSize="lg" alignItems="center" p="10px">Adult </Text>
+                <Flex w={["60px","90px","120px"]} h = {["10px","20px","50px"]}>
+                  <Text mr="10px"  alignItems="center" p="10px">Adult </Text>
                   <Box display="flex" gap="10px" alignItems="center">
                     <Button bg="tomato" color="white" onClick={()=>{
                     setAdult(adult+1);
@@ -125,7 +125,7 @@ const handleSingleProduct=(type,id)=>{
                   }}  _hover={{ bg: 'green.300',color:"black" }}><MinusIcon/></Button></Box>
                 </Flex>
 
-                <Flex w="120px" h="50px" ml="70px">
+                <Flex w={["60px","90px","120px"]} h = {["10px","20px","50px"]} ml="70px">
                   <Text mr="10px" fontSize="lg" alignItems="center" p="10px">Child </Text>
                   <Box display="flex" gap="10px" alignItems="center">
                     <Button bg="tomato" color="white" onClick={()=>{
@@ -148,7 +148,7 @@ const handleSingleProduct=(type,id)=>{
               <Accordian img={property.image}/>
 
 
-              <Flex w="100%" justify="space-between" gap="20px" p="20px">
+              <Flex w="100%" justify="space-between" gap="20px" p="20px" fontSize={["sm","md","lg"]}>
                 <Box w="60%">
                 <Box h="85px" bg="gray.100" w="100%" p="20px" textAlign="left" alignItems="center" fontSize="3xl" fontWeight="bold">
                   Confirmation Policy
