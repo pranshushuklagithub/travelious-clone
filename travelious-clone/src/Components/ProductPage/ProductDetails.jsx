@@ -71,7 +71,7 @@ const handleSingleProduct=(type,id)=>{
                     </Box>
                   </Flex>
                   <Text fontSize="xl">Starting from</Text>
-                  <Flex w="45%" justify="space-between">
+                  <Flex w="50%" justify="space-between">
                   <Heading> ₹  {property.price}</Heading>
                   <Heading display="flex" gap="10px"> ₹ <Text textDecoration="line-through">{property.price+cPrice}</Text></Heading>
                   </Flex>
