@@ -95,9 +95,11 @@
 .sliderClass{
 
   margin: 0px 20px 0px 10px;
-  width: 400px;
-  height: 530px;
+  width: 97%;
+  height: 550px;
+
 }
+
 
   @media screen and (max-width:982px){
     .nav-links{

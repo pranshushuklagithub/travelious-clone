@@ -274,7 +274,7 @@ export function PopularAttraction(){
     <Image w="20px"  src="https://ak-d.tripcdn.com/images/0AS6o120009gxfriv28B3.png" />
     <Text ml="6px" textDecoration={"underline"}   textDecorationLine={"underline"} textDecorationStyle="dashed" paddingBottom= "2px" textUnderlineOffset={"7px"}> Booking Guarantee</Text>
   </GridItem>
-  <GridItem   display={"flex"} >
+  <GridItem   display={"flex"}>
     <Image w="20px"  src="https://ak-d.tripcdn.com/images/0AS2j120009gxknwsA052.png" />
     <Text ml="6px" textDecoration={"underline"}   textDecorationLine={"underline"} textDecorationStyle="dashed" paddingBottom= "2px" textUnderlineOffset={"7px"}> Stay Guarantee</Text>
   </GridItem>
@@ -291,8 +291,8 @@ export function PopularAttraction(){
   })}
 </Flex>
 
-<Grid templateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)","repeat(2,1fr)","repeat(3,1fr)"]} mt="7%" gap="30px" alignItems={"center"} justifyContent={"center"}>
-<GridItem w="400px" h="500px">
+<Grid templateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)","repeat(2,1fr)","repeat(3,1fr)"]} mt="7%" gap="20px" alignItems={"center"} justifyContent={"space-evenly"}>
+<GridItem w="90%" h="700px" m="auto">
 <Card >
   <CardBody>
     <Image
@@ -359,7 +359,7 @@ export function PopularAttraction(){
 </Card>
 </GridItem>
 
-<GridItem  w="400px" h="500px">
+<GridItem  w="90%" h="700px" m="auto">
 <Card >
   <CardBody>
     <Image
@@ -426,7 +426,7 @@ export function PopularAttraction(){
 </Card>
 </GridItem>
 
-<GridItem w="400px" h="500px" >
+<GridItem w="90%" h="700px" m="auto">
 <Card >
   <CardBody>
     <Image
@@ -548,7 +548,7 @@ gap="30px"  alignSelf="center" justifyContent="center"
     <Image
       src='https://www.euttaranchal.com/tourism/photos/kedarnath-2240900.jpg'
       alt='Kedarnath trip'
-      borderRadius='lg'  w="95%" m="auto" h="250px" justifyContent={"center"}
+      borderRadius='lg'  w="95%" m="auto" h="250px" margin="auto"
     />
     <Stack mt='6' spacing='3'>
       <Heading 
@@ -599,7 +599,7 @@ gap="30px"  alignSelf="center" justifyContent="center"
     <Image
       src='https://www.euttaranchal.com/tourism/photos/rishikesh-3715497.jpg'
       alt='Kedarnath trip'
-      borderRadius='lg'  w="95%" m="auto" h="250px" justifyContent={"center"}
+      borderRadius='lg'  w="95%" m="auto" h="250px" margin="auto"
     />
     <Stack mt='6' spacing='3'>
       <Heading 
@@ -652,7 +652,7 @@ gap="30px"  alignSelf="center" justifyContent="center"
     <Image
       src='https://assets.gqindia.com/photos/5cdc1e9478abdc6a505bfad6/16:9/pass/kerala.jpg'
       alt='Kedarnath trip'
-      borderRadius='lg'  w="95%" m="auto" h="250px" justifyContent={"center"}
+      borderRadius='lg'  w="95%" m="auto" h="250px" margin="auto"
     />
     <Stack mt='6' spacing='3'>
       <Heading 
