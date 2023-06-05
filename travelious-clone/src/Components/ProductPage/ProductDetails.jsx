@@ -138,9 +138,9 @@ const handleSingleProduct=(type,id)=>{
                 </Flex>
 
                 <Flex gap="20px">
-                  <Button _hover={{ bg: 'green.300',color:"black" }} bg="tomato" color="white" size="lg">Book Now</Button>
+                  <Button _hover={{ bg: 'green.300',color:"black" }} bg="tomato" color="white" size="lg" onClick={onOpen}>Book Now</Button>
                   <Button _hover={{ bg: 'green.300', color:"black"}} bg="tomato" color="white" onClick={onOpen} size="lg">Send Enquiry</Button>
-                  {onOpen?<SendEnquiryModal  onClose={onClose}  isOpen={isOpen} adult={adult} child={child}/>:false}
+                  {onOpen?<SendEnquiryModal  onClose={onClose}  isOpen={isOpen} adult={adult} child={child} price={property.price}/>:false}
                 </Flex>
             </Flex> 
 
