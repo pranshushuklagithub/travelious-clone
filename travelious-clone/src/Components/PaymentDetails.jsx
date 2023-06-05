@@ -2,11 +2,16 @@ import React from "react";
 import "./style.css"
 import logo from "./card_img.png"
 import video from "./pexels-paulo-renato-3578883-3840x2160-30fps.mp4"
+import { useNavigate } from "react-router-dom";
 function PaymentDetails(){
+    const navigate= useNavigate()
     return (
         <div class="container">
 
-        <form action="">
+        <form action="" onSubmit={()=>{
+            alert("Payment is completed successfully !")
+            navigate("/")
+        }}>
         <video src={video} autoPlay muted loop />
             <div class="row">
     

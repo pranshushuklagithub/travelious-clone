@@ -83,9 +83,9 @@ function Activities() {
                 </Box>
                 
                 <Button bg="tomato" color="white" onClick={()=>{
-                    // alert(`Sorry! Page is not working.${property.id}`)
+                   
                     navigate(`/productDetails/${property.id}`)
-                }} _hover={{ bg: 'green.300',color:"black" }}>View Details</Button>
+                }} _hover={{ bg: 'green.300',color:"black" }} w="30%">View Details</Button>
               </Box>)
             })
         }

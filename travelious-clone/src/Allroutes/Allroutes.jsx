@@ -6,7 +6,6 @@ import Activities from "../Components/ProductPage/Activities";
 import Navbar from "../homePage"
 import LoginSignupPage from "../Components/Login/Login";
 import ConfirmationPage from "../Components/ProductPage/ConfirmationPage";
-import LoginSignupPage from "../Components/Login";
 import PaymentDetails from "../Components/PaymentDetails";
 
 function Allroutes(){
