@@ -94,7 +94,7 @@ const handleSingleProduct=(type,id)=>{
                         <Text>Meals</Text>
                     </Box>
                   </SimpleGrid>
-                  <Flex  w="100%" h="70px" gap="10px" justify="space-evenly" boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px" ml="20px" fontSize="md">
+                  <Flex mt="10%"  w="100%" h="70px" gap="10px" justify="space-evenly" boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px" ml="20px" fontSize="md">
                         <Box display="flex" gap="10px" h="70px" alignItems="center"  p="10px"  w="100%">
                           <Image src="https://banbanjara.com/assets/images/day-icon.png" w="20%" h="40px"></Image>
                           <Text>4 Days  |</Text>
@@ -155,27 +155,27 @@ const handleSingleProduct=(type,id)=>{
               </Box>
               <Box p="20px">
                 <UnorderedList color="tomato" textAlign="left" fontSize="3xl">
-                  <ListItem ><Text color="black" fontSize="2xl">Upon booking, the traveller will receive a confirmation voucher via email, within 24 hours.</Text></ListItem>
-                  <ListItem ><Text color="black" fontSize="2xl">In the special cases of slots not being available, feasible alternatives will be provided to the customer, in regards to the customer’s preference. In such cases, a new voucher would be sent via email, consisting of the new travel details.</Text></ListItem>
+                  <ListItem ><Text color="black" fontSize="xl">Upon booking, the traveller will receive a confirmation voucher via email, within 24 hours.</Text></ListItem>
+                  <ListItem ><Text color="black" fontSize="xl">In the special cases of slots not being available, feasible alternatives will be provided to the customer, in regards to the customer’s preference. In such cases, a new voucher would be sent via email, consisting of the new travel details.</Text></ListItem>
                 </UnorderedList>
               </Box>
 
 
-              <Box h="85px" bg="gray.100" w="100%" p="20px" textAlign="left" alignItems="center" fontSize="xl" fontWeight="bold">
+              <Box h="85px" bg="gray.100" w="100%" p="20px" textAlign="left" alignItems="center" fontSize="3xl" fontWeight="bold">
               Cancellation Policy
               </Box>
               <Box p="20px">
                 <UnorderedList color="tomato" textAlign="left" fontSize="xl">
-                  <ListItem ><Text color="black" fontSize="2xl">Any cancellation made before 25 days prior to the date of departure, would levy a 50% of total tour cost as cancellation charges.</Text></ListItem>
-                  <ListItem ><Text color="black" fontSize="2xl">Any cancellation made within 0-25 days prior to the date of departure, would levy a 100% of total tour cost as cancellation charges.</Text></ListItem>
-                  <ListItem ><Text color="black" fontSize="2xl">Due to any restrictions such as sudden government policies or regulations, health hazards, medical emergencies, or unprecedented weather conditions, activities and tours may be nonoperational and be cancelled. In cases such as these, operators will attempt to cater to the traveller an alternate, which is feasible in nature. However, any refund would not be catered.</Text></ListItem>
+                  <ListItem ><Text color="black" fontSize="xl">Any cancellation made before 25 days prior to the date of departure, would levy a 50% of total tour cost as cancellation charges.</Text></ListItem>
+                  <ListItem ><Text color="black" fontSize="xl">Any cancellation made within 0-25 days prior to the date of departure, would levy a 100% of total tour cost as cancellation charges.</Text></ListItem>
+                  <ListItem ><Text color="black" fontSize="xl">Due to any restrictions such as sudden government policies or regulations, health hazards, medical emergencies, or unprecedented weather conditions, activities and tours may be nonoperational and be cancelled. In cases such as these, operators will attempt to cater to the traveller an alternate, which is feasible in nature. However, any refund would not be catered.</Text></ListItem>
                 </UnorderedList>
                 
               </Box>
               </Box>
 
 
-              <Box >
+              <Box alignItems={"center"}  alignContent={"center"} p="5% 0px 5% 0px">
                 <Image  src="https://admin.banbanjara.com/public/frontend/uploads/product/1633584633283-KEDARKANTHATREKWEBSITEADD.jpg" borderRadius="50px"></Image>
               </Box>
 

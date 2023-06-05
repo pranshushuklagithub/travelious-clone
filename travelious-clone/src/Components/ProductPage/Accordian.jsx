@@ -17,11 +17,11 @@ export const Accordian=({img})=>{
       img5:"https://media.istockphoto.com/id/895081824/photo/tourist-visiting-spain.webp?b=1&s=170667a&w=0&k=20&c=ptIdYDtsmEhWJ7aVg-88Egu93-jmSYh3QfxobCR_Mjo="
     }
     
-    return <Box w="90%" textAlign="left" p="30px" justifyContent="center" m="auto">
+    return <Box w="100%" textAlign="left" justifyContent="center" m="auto">
         <Accordion display="flex" w="100%"  h="500px">
   <AccordionItem w="33%" p="15px" m="auto">
     <h2>
-      <AccordionButton _hover={{ bg: 'green.300',color:"black" }} fontSize="xx-large" textAlign="center" justifyContent="center" bg="tomato" color="white" onClick={()=>{
+      <AccordionButton _hover={{ bg: 'green.300',color:"black" }} fontSize="30px" textAlign="center" justifyContent="center" bg="tomato" color="white" onClick={()=>{
         setOption({stayType:!option.stayType,meals:false,activity:false,inclusion:false,thingToCarry:false})
       }} borderRadius="20px">
       Stay Type
@@ -43,7 +43,7 @@ export const Accordian=({img})=>{
 
   <AccordionItem w="33%" p="15px" m="auto">
     <h2>
-      <AccordionButton _hover={{ bg: 'green.300',color:"black" }} fontSize="xx-large" textAlign="center" justifyContent="center" bg="tomato" color="white" onClick={()=>{
+      <AccordionButton _hover={{ bg: 'green.300',color:"black" }} fontSize="30px" textAlign="center" justifyContent="center" bg="tomato" color="white" onClick={()=>{
         setOption({stayType:false,meals:!option.meals,activity:false,inclusion:false,thingToCarry:false})
       }} borderRadius="20px">
       Meals
@@ -62,7 +62,7 @@ export const Accordian=({img})=>{
 
   <AccordionItem w="33%" p="15px" m="auto">
     <h2>
-      <AccordionButton _hover={{ bg: 'green.300',color:"black" }} fontSize="xx-large" textAlign="center" justifyContent="center" bg="tomato" color="white" onClick={()=>{
+      <AccordionButton _hover={{ bg: 'green.300',color:"black" }} fontSize="30px" textAlign="center" justifyContent="center" bg="tomato" color="white" onClick={()=>{
         setOption({stayType:false,meals:false,activity:!option.activity,inclusion:false,thingToCarry:false})
       }} borderRadius="20px">
       Activity
@@ -82,7 +82,7 @@ export const Accordian=({img})=>{
 
   <AccordionItem w="33%" p="15px" m="auto">
     <h2>
-      <AccordionButton _hover={{ bg: 'green.300',color:"black" }} fontSize="xx-large" textAlign="center" justifyContent="center" bg="tomato" color="white" onClick={()=>{
+      <AccordionButton _hover={{ bg: 'green.300',color:"black" }} fontSize="30px" textAlign="center" justifyContent="center" bg="tomato" color="white" onClick={()=>{
         setOption({stayType:false,meals:false,activity:false,inclusion:!option.inclusion,thingToCarry:false})
       }} borderRadius="20px">
       Inclusions
@@ -100,7 +100,7 @@ export const Accordian=({img})=>{
   </AccordionItem>
   <AccordionItem w="33%" p="15px" m="auto">
     <h2>
-      <AccordionButton _hover={{ bg: 'green.300',color:"black" }} fontSize="xx-large" textAlign="center" justifyContent="center" bg="tomato" color="white" onClick={()=>{
+      <AccordionButton _hover={{ bg: 'green.300',color:"black" }} fontSize="30px" textAlign="center" justifyContent="center" bg="tomato" color="white" onClick={()=>{
         setOption({stayType:false,meals:false,activity:false,inclusion:false,thingToCarry:!option.thingToCarry})
       }} borderRadius="20px">
       Things To Carry
