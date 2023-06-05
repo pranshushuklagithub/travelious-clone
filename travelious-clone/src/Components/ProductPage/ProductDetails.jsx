@@ -48,7 +48,7 @@ const handleSingleProduct=(type,id)=>{
     reviewCount: 34,
     rating: 4,
   }
-    return <Box w = {['0em', '48em', '62em', '80em', '96em',"126em"]} fontSize={['xsm','sm',"md"]}>
+    return <Box w = "100%">
       <Flex p="20px" boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"  gap="20px" m="auto" justifyContent="space-between" w="95%">
                 <Box  w="60%"  textAlign="left" p="30px">
                     <Image src={property.image} borderRadius="20px" w="100%" mb="20px"></Image>
