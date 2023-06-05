@@ -19,6 +19,7 @@ function Allroutes(){
             <Route path="/confirmation" element={<ConfirmationPage/>} />
             <Route path="/login" element= {<LoginSignupPage/>}/>
             <Route path="/payment" element= {<PaymentDetails/>} />
+            
         </Routes>
     )
 }

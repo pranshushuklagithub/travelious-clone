@@ -239,7 +239,7 @@ mt="5%" src="https://de6-engine.flamingtext.com/netfu/tmp28008/coollogo_com-8442
 </li>
  {/* 7th a */}
 <li>
-    <Link  _hover={{ textDecorationColor:"white"}}><Button mt="-5px" _hover={{bg:"white" ,color:"#e2660f",border:"2px solid #e2660f"}} bg="#e2660f" color="white"><Text>Register</Text></Button></Link>
+    <Link to="/login"  _hover={{ textDecorationColor:"white"}}><Button mt="-5px" _hover={{bg:"white" ,color:"#e2660f",border:"2px solid #e2660f"}} bg="#e2660f" color="white"><Text>Register</Text></Button></Link>
 </li>
 </ul>    
 <Box className='hamburger'>
