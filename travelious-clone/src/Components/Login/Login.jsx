@@ -1,14 +1,24 @@
 
 import React, { useState } from 'react';
-import './Login.css';
-import './Login.css'
+// import './Login.css';
+// import './Login.css'
+// import  from './Login.css';
 // import './Login.css'
 // import './Login.css'
+import styles from './styles.css';
 import { useNavigate } from 'react-router-dom';
-import { productReducer } from '../../Redux/reducer';
+// import { productReducer } from '../../Redux/reducer';
 
 
-
+var button= {
+  width: '100%',
+  padding: '10px',
+  backgroundColor: ' #ef7d2a',
+  color: 'black',
+  border: 'none',
+  borderradius: '5px',
+  cursor: 'pointer',
+}
 
 const LoginSignupPage = () => {
   const [name, setName] = useState('');
@@ -136,11 +146,11 @@ const LoginSignupPage = () => {
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo5E_d7YpESy5_6wTImh_bnrbiM22zl3kaZw&usqp=CAU" style={{height:"50px" }} />
             </div>
           )}
-          <button type="submit">{isLogin ? 'Login' : 'Sign Up'}</button>
+          <button type="submit" style={button}>{isLogin ? 'Login' : 'Sign Up'}</button>
         </form>
         <p>
           {isLogin ? "Don't have an account? " : 'Already have an account? '}
-          <button onClick={handleToggleForm}>
+          <button onClick={handleToggleForm} style={button}>
             {isLogin ? 'Sign Up' : 'Login'}
           
           </button>

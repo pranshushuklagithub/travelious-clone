@@ -31,7 +31,7 @@
     border-radius: 5px;
   }
   
-  button {
+  /* button {
     width: 100%;
     padding: 10px;
     background-color: #ef7d2a;
@@ -39,7 +39,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
+  } */
   
   button:hover {
     background-color: #45a049;
