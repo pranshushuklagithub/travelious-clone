@@ -94,7 +94,7 @@ const handleSingleProduct=(type,id)=>{
                         <Text>Meals</Text>
                     </Box>
                   </Grid>
-                  <Flex  w="70%" h="70px" gap="10px" justify="space-evenly" boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px" ml="20px">
+                  <Flex  w="100%" h="70px" gap="10px" justify="space-evenly" boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px" ml="20px">
                         <Box display="flex" gap="10px" h="70px" alignItems="center"  p="10px">
                           <Image src="https://banbanjara.com/assets/images/day-icon.png" w="40px" h="40px"></Image>
                           <Text fontSize="xl">4 Days  |</Text>
