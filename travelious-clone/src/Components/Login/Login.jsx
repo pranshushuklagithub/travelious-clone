@@ -10,15 +10,19 @@ import { useNavigate } from 'react-router-dom';
 // import { productReducer } from '../../Redux/reducer';
 
 
-var button= {
-  width: '100%',
-  padding: '10px',
-  backgroundColor: ' #ef7d2a',
-  color: 'black',
-  border: 'none',
-  borderradius: '5px',
-  cursor: 'pointer',
-}
+// var button1= {
+//   width: '100%',
+//   padding: '10px',
+//   backgroundColor: ' #ef7d2a',
+//   color: 'black',
+//   border: 'none',
+//   borderradius: '5px',
+//   cursor: 'pointer',
+//   hover: {backgroundColor: '#45a049'}
+  
+// }
+
+
 
 const LoginSignupPage = () => {
   const [name, setName] = useState('');
@@ -87,21 +91,22 @@ const LoginSignupPage = () => {
   
 
   return (
-    <div className="container">
+    <div className="container1">
          <div className="background-image"></div>
-      <div className="form-container">
-        <h1>Travelious</h1>
+      <div className="form-container1">
+        <h1 style={{   textalign: 'center',
+    marginbottom: '30px', fontWeight:'bold'}}>Travelious</h1>
         <form onSubmit={handleFormSubmit}>
           {!isLogin && (
             <div>
-              <input
+              <input className='input1'
                 type="text"
                 value={name}
                 onChange={handleNameChange}
                 placeholder="Name"
                 required
               />
-              <input
+              <input className='input1'
                 type="text"
                 value={mobileNumber}
                 onChange={handleMobileNumberChange}
@@ -110,14 +115,14 @@ const LoginSignupPage = () => {
               />
             </div>
           )}
-          <input
+          <input className='input1'
             type="text"
             value={email}
             onChange={handleEmailChange}
             placeholder="Email"
             required
           />
-          <input
+          <input className='input1'
             type="password"
             value={password}
             onChange={handlePasswordChange}
@@ -125,7 +130,7 @@ const LoginSignupPage = () => {
             required
           />
           {!isLogin && (
-            <input
+            <input className='input1'
               type="password"
               value={confirmPassword}
               onChange={handleConfirmPasswordChange}
@@ -135,7 +140,7 @@ const LoginSignupPage = () => {
           )}
           {!isLogin && (
             <div>
-              <input
+              <input className='input1'
                 type="text"
                 value={captcha}
                 onChange={handleCaptchaChange}
@@ -146,11 +151,11 @@ const LoginSignupPage = () => {
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo5E_d7YpESy5_6wTImh_bnrbiM22zl3kaZw&usqp=CAU" style={{height:"50px" }} />
             </div>
           )}
-          <button type="submit" style={button}>{isLogin ? 'Login' : 'Sign Up'}</button>
+          <button type="submit"className='button1'>{isLogin ? 'Login' : 'Sign Up'}</button>
         </form>
         <p>
           {isLogin ? "Don't have an account? " : 'Already have an account? '}
-          <button onClick={handleToggleForm} style={button}>
+          <button onClick={handleToggleForm} className='button1'>
             {isLogin ? 'Sign Up' : 'Login'}
           
           </button>
