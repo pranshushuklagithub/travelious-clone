@@ -49,7 +49,7 @@ const handleSingleProduct=(type,id)=>{
     rating: 4,
   }
     return <Box w = "100%">
-      <Flex p="20px" boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"  gap="20px" m="auto" justifyContent="space-between" w="95%">
+      <Flex p="20px" boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"  gap="20px" m="auto" justifyContent="space-between" w="100%">
                 <Box  w="60%"  textAlign="left" p="30px">
                     <Image src={property.image} borderRadius="20px" w="100%" mb="20px"></Image>
                     <Text mb="20px">{prop.description}</Text>
@@ -76,7 +76,7 @@ const handleSingleProduct=(type,id)=>{
                   <Heading display="flex" gap="10px"> ₹ <Text textDecoration="line-through">{property.price+cPrice}</Text></Heading>
                   </Flex>
                   <Text fontSize="xl">Per adult</Text>
-                  <SimpleGrid columns={[1,2]} w="60%" p="20px" h={["200px","350px"]} justifyContent="space-evenly">
+                  <SimpleGrid columns={[1,2]} w="60%" p="20px" h="300" justifyContent="space-evenly">
                     <Box boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px" p="20px" textAlign="center">
                         <Image src="https://admin.banbanjara.com/public/frontend/uploads/masters/1560171111727-accommodationicon.svg" m="auto" mb = "40px" h="40px"></Image>
                         <Text>Accommodation</Text>
@@ -94,7 +94,7 @@ const handleSingleProduct=(type,id)=>{
                         <Text>Meals</Text>
                     </Box>
                   </SimpleGrid>
-                  <Flex  w="100%" h="70px" gap="10px" justify="space-evenly" boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px" ml="20px" fontSize={["sm","md","xl"]}>
+                  <Flex  w="100%" h="70px" gap="10px" justify="space-evenly" boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px" ml="20px" fontSize="md">
                         <Box display="flex" gap="10px" h="70px" alignItems="center"  p="10px"  w="100%">
                           <Image src="https://banbanjara.com/assets/images/day-icon.png" w="20%" h="40px"></Image>
                           <Text>4 Days  |</Text>
@@ -111,9 +111,9 @@ const handleSingleProduct=(type,id)=>{
                 </Box>
             </Flex>
 
-            <Flex gap="20px" bg="teal" alignItems="center" p="20px" h="90px" justify="space-evenly" w="100%" fontSize={["sm","md","lg"]}>
+            <Flex gap="20px" bg="teal" alignItems="center" p="20px" h="90px" justify="space-evenly" w="100%" fontSize="md">
                 <Input placeholder="Select Date and Time" size="md" type="datetime-local" w="15%" borderColor="black" bg="white"/>
-                <Flex w={["60px","90px","120px"]} h = {["10px","20px","50px"]}>
+                <Flex w={["60px","90px","120px"]} h = "50">
                   <Text mr="10px"  alignItems="center" p="10px">Adult </Text>
                   <Box display="flex" gap="10px" alignItems="center">
                     <Button bg="tomato" color="white" onClick={()=>{
@@ -125,7 +125,7 @@ const handleSingleProduct=(type,id)=>{
                   }}  _hover={{ bg: 'green.300',color:"black" }}><MinusIcon/></Button></Box>
                 </Flex>
 
-                <Flex w={["60px","90px","120px"]} h = {["10px","20px","50px"]} ml="70px">
+                <Flex w={["60px","90px","120px"]} h = "50" ml="70px">
                   <Text mr="10px" fontSize="lg" alignItems="center" p="10px">Child </Text>
                   <Box display="flex" gap="10px" alignItems="center">
                     <Button bg="tomato" color="white" onClick={()=>{
@@ -161,11 +161,11 @@ const handleSingleProduct=(type,id)=>{
               </Box>
 
 
-              <Box h="85px" bg="gray.100" w="100%" p="20px" textAlign="left" alignItems="center" fontSize="3xl" fontWeight="bold">
+              <Box h="85px" bg="gray.100" w="100%" p="20px" textAlign="left" alignItems="center" fontSize="xl" fontWeight="bold">
               Cancellation Policy
               </Box>
               <Box p="20px">
-                <UnorderedList color="tomato" textAlign="left" fontSize="3xl">
+                <UnorderedList color="tomato" textAlign="left" fontSize="xl">
                   <ListItem ><Text color="black" fontSize="2xl">Any cancellation made before 25 days prior to the date of departure, would levy a 50% of total tour cost as cancellation charges.</Text></ListItem>
                   <ListItem ><Text color="black" fontSize="2xl">Any cancellation made within 0-25 days prior to the date of departure, would levy a 100% of total tour cost as cancellation charges.</Text></ListItem>
                   <ListItem ><Text color="black" fontSize="2xl">Due to any restrictions such as sudden government policies or regulations, health hazards, medical emergencies, or unprecedented weather conditions, activities and tours may be nonoperational and be cancelled. In cases such as these, operators will attempt to cater to the traveller an alternate, which is feasible in nature. However, any refund would not be catered.</Text></ListItem>
@@ -176,7 +176,7 @@ const handleSingleProduct=(type,id)=>{
 
 
               <Box >
-                <Image  src="https://admin.banbanjara.com/public/frontend/uploads/product/1633584633283-KEDARKANTHATREKWEBSITEADD.jpg"h="100%" borderRadius="50px"></Image>
+                <Image  src="https://admin.banbanjara.com/public/frontend/uploads/product/1633584633283-KEDARKANTHATREKWEBSITEADD.jpg" borderRadius="50px"></Image>
               </Box>
 
               </Flex>
