@@ -53,7 +53,7 @@ function Trekking() {
                     as='h4'
                     lineHeight='tight'
                     noOfLines={1}
-                    fontSize="4xl"
+                    fontSize="3xl"
                   >
                     {property.title}
                   </Box>
@@ -83,7 +83,7 @@ function Trekking() {
                 <Button bg="tomato" color="white" onClick={()=>{
                     // alert(`Sorry! Page is not working.${property.id}`)
                     navigate(`/productDetails/${property.id}`)
-                }}_hover={{ bg: 'green.300',color:"black" }} w="30%" >View Details</Button>
+                }}_hover={{ bg: 'green.300',color:"black" }} >View Details</Button>
               </Box>)
             })
         }

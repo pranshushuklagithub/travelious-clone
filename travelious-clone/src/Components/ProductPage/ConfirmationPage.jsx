@@ -34,14 +34,14 @@ export default function  ConfirmationPage() {
     </Text><br></br>
     <Text color='blue.600' fontSize='2xl'>
     Plese read the below details carefully !
-    </Text><br></br><br></br>
+    </Text><br></br>
     <Box fontSize="2xl"  color='blue.600'>
     <span>Name :</span> {data.name} <br></br>
-    <br></br>
-    <span>Contact details :</span> {data.contact} <br></br><br></br>
-    <span>Total number of people :</span> {data.totalMembers}<br></br><br></br>
-    <span>Date-Timing :</span> {data.date}<br></br><br></br>
-    <span>Total Price :</span> {data.price}<br></br><br></br>
+    
+    <span>Contact details :</span> {data.contact} <br></br>
+    <span>Total number of people :</span> {data.totalMembers}<br></br>
+    <span>Date-Timing :</span> {data.date}<br></br>
+    <span>Total Price :</span> {data.price}<br></br>
     <span>Discount : 10%</span><br></br>
     </Box>
     

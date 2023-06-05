@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 // import  from './Login.css';
 // import './Login.css'
 // import './Login.css'
-import styles from './styles.css';
+import "./styles.css"
 import { useNavigate } from 'react-router-dom';
 // import { productReducer } from '../../Redux/reducer';
 

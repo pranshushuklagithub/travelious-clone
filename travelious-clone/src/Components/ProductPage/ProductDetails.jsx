@@ -48,8 +48,8 @@ const handleSingleProduct=(type,id)=>{
     reviewCount: 34,
     rating: 4,
   }
-    return <Box>
-      <Flex p="20px" boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px" w="95%" m="auto" justifyContent="space-between">
+    return <Box >
+      <Flex p="20px" boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"  gap="20px" m="auto" justifyContent="space-between">
                 <Box  w="60%"  textAlign="left" p="30px">
                     <Image src={property.image} borderRadius="20px" w="100%" mb="20px"></Image>
                     <Text mb="20px">{prop.description}</Text>
@@ -57,7 +57,7 @@ const handleSingleProduct=(type,id)=>{
 
                 <Box textAlign="left" p="30px" w="40%" justifyContent="center">
                 <Heading mb="20px">{property.title}</Heading>
-                <Flex  mt='2' alignItems='center' mb="20px">
+                <Flex  mt='2' alignItems='center' mb="20px" >
                     {Array(5)
                       .fill('')
                       .map((_, i) => (
