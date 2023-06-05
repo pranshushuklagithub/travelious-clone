@@ -291,8 +291,8 @@ export function PopularAttraction(){
   })}
 </Flex>
 
-<Grid templateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)","repeat(2,1fr)","repeat(3,1fr)"]} mt="30px" gap="30px" alignItems={"center"} justifyContent={"center"}>
-<GridItem >
+<Grid templateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)","repeat(2,1fr)","repeat(3,1fr)"]} mt="7%" gap="30px" alignItems={"center"} justifyContent={"center"}>
+<GridItem w="fit-content" h="500px">
 <Card >
   <CardBody>
     <Image
@@ -359,7 +359,7 @@ export function PopularAttraction(){
 </Card>
 </GridItem>
 
-<GridItem >
+<GridItem  w="fit-content" h="500px">
 <Card >
   <CardBody>
     <Image
@@ -426,7 +426,7 @@ export function PopularAttraction(){
 </Card>
 </GridItem>
 
-<GridItem >
+<GridItem w="fit-content" h="500px" >
 <Card >
   <CardBody>
     <Image
