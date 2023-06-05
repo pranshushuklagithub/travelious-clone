@@ -5,9 +5,12 @@ const initialData={
     productType:"trekking",
     products:[],
     singleProduct:{},
-    cart:[],
+    cart:[]
 }
 
+const nameOfUser={
+name:""
+}
 export const productReducer = (state=initialData,action)=>{
     if(action.type==="SUCCESS") {
         return {
@@ -45,6 +48,13 @@ export const singleProductReducer = (state=initialData,action)=>{
         return {
             ...state,productType:action.payload
         }
+    }
+    return state;
+}
+export const nameReducer=(state=nameOfUser,{type,payload})=>{
+    if(type=="changeName"){
+        return{...state,name:payload}
+    
     }
     return state;
 }

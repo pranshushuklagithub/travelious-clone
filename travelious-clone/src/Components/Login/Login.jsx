@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 // import './Login.css'
 import "./styles.css"
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 // import { productReducer } from '../../Redux/reducer';
 
 
@@ -32,11 +33,12 @@ const LoginSignupPage = () => {
   const [mobileNumber, setMobileNumber] = useState('');
   const [isLogin, setIsLogin] = useState(true);
   const [captcha, setCaptcha] = useState('');
-
+const dispatch=useDispatch();
    const nav= useNavigate();
 
   const handleNameChange = (e) => {
     setName(e.target.value);
+   
   };
 
   const handleEmailChange = (e) => {
@@ -61,18 +63,19 @@ const LoginSignupPage = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
+    dispatch({type:"changeName",payload:name})
     //  login/signup logic here
     if (isLogin) {
       // Login
       console.log('Logged in successfully!');
+
       alert("Logged in successfully!")
        nav("/");
     } else {
       // Signup
       alert("Signed up successfully!")
       console.log('Signed up successfully!');
-      
+      nav("/");
     }
 
     
@@ -95,7 +98,7 @@ const LoginSignupPage = () => {
          <div className="background-image"></div>
       <div className="form-container1">
         <h1 style={{   textalign: 'center',
-    marginbottom: '30px', fontWeight:'bold'}}>Travelious</h1>
+    marginBottom: '4%', fontWeight:'bold',fontFamily:"cursive",fontSize:"40px",color:"#e2660f" }}>Travelious</h1>
         <form onSubmit={handleFormSubmit}>
           {!isLogin && (
             <div>
@@ -151,9 +154,12 @@ const LoginSignupPage = () => {
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo5E_d7YpESy5_6wTImh_bnrbiM22zl3kaZw&usqp=CAU" style={{height:"50px" }} />
             </div>
           )}
-          <button type="submit"className='button1'>{isLogin ? 'Login' : 'Sign Up'}</button>
+          <button  style={{   textalign: 'center',
+   fontFamily:"cursive",fontSize:"15px" }} type="submit"className='button1'>{isLogin ? 'Login' : 'Sign Up'}</button>
         </form>
-        <p>
+        <p 
+       style={{   textalign: 'center',
+    marginBottom: '4%',fontFamily:"cursive",fontSize:"15px" }} >
           {isLogin ? "Don't have an account? " : 'Already have an account? '}
           <button onClick={handleToggleForm} className='button1'>
             {isLogin ? 'Sign Up' : 'Login'}

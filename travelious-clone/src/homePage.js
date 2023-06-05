@@ -5,7 +5,7 @@ import {Box,  } from '@chakra-ui/react'
 import { CommentBox, MainFront, PopularAttraction, PopularDestination } from './Components/All';
   import 'react-multi-carousel/lib/styles.css';
 
-
+  import { useEffect ,useState} from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { Experience, SubscribePart } from './Components/All';
