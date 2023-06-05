@@ -1,12 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import {Modal,ModalOverlay,ModalContent,ModalHeader,ModalFooter,ModalBody,ModalCloseButton,FormLabel,Input,Button,FormControl,Spinner} from '@chakra-ui/react'
 import { useState } from 'react'
 
-export const SendEnquiryModal=({onClose,isOpen,adult,child}) =>{
-  console.log(adult,child)
+export const SendEnquiryModal=({onClose,isOpen,adult,child,price}) =>{
+  const navigate =  useNavigate()
   let[spin,setSpin] = useState(false)
-  let [enquiry,setEnquiry] = useState({adult,child});
+  let [enquiry,setEnquiry] = useState({adult,child,price});
   function handleSpin(){
     setTimeout(()=>{
       setSpin(false);
@@ -15,6 +16,11 @@ export const SendEnquiryModal=({onClose,isOpen,adult,child}) =>{
     setTimeout(()=>{
       onClose()
     },1000)
+  
+    setTimeout(()=>{
+      navigate("/confirmation")
+    },1000)
+    
   }
   
     return (
@@ -30,7 +36,7 @@ export const SendEnquiryModal=({onClose,isOpen,adult,child}) =>{
             <ModalBody pb={6}>
               <FormControl>
                 <FormLabel>Name</FormLabel>
-                <Input  placeholder='Your Name' name="Name" onChange={(e)=>{
+                <Input  placeholder='Your Name' name="name" onChange={(e)=>{
                   setEnquiry({...enquiry,[e.target.name]:e.target.value})
                 }}/>
               </FormControl>
@@ -71,7 +77,12 @@ export const SendEnquiryModal=({onClose,isOpen,adult,child}) =>{
   
             <ModalFooter>
               <Button mr={3} _hover={{ bg: 'green.300',color:"black" }} bg="tomato" color="white" onClick={()=>{
-                console.log(enquiry);
+                
+                localStorage.setItem("name",(enquiry.name))
+                localStorage.setItem("price",(enquiry.price))
+                localStorage.setItem("totalMembers",(enquiry.numberOfPeople))
+                localStorage.setItem("contact",(enquiry.phoneNumber))
+                localStorage.setItem("date-timing",(enquiry.date))
                 handleSpin();
               }}>
               {spin?<Spinner color='black'/>:"Send"}

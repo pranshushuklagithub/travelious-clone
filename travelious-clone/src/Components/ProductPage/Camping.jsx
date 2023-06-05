@@ -1,4 +1,4 @@
-import { Box,Button,Image, Grid} from "@chakra-ui/react";
+import { Box,Button,Image, SimpleGrid} from "@chakra-ui/react";
 import {StarIcon} from "@chakra-ui/icons"
 import { productAction } from "../../Redux/action";
 import { useSelector,useDispatch } from "react-redux";
@@ -9,7 +9,8 @@ import { useEffect,useState } from "react";
 
 
 function Camping() {
-  const [sort,setSort] = useState("asc");
+  const [sort,setSort] = useState("");
+  
 
 
   const disptach = useDispatch()
@@ -34,108 +35,16 @@ function Camping() {
     disptach(productAction(type,sort))
   }
     
-    //     const property = [
-    //     {imageUrl: 'https://bit.ly/2Z4KKcF',
-    //       imageAlt: 'Rear view of modern home with pool',
-    //       beds: 3,
-    //       baths: 2,
-    //       title: 'Modern home in city center in the heart of historic Los Angeles',
-    //       formattedPrice: '$1,900.00',
-    //       reviewCount: 34,
-    //       rating: 4,
-    //     },
-    //     {imageUrl: 'https://bit.ly/2Z4KKcF',
-    //     imageAlt: 'Rear view of modern home with pool',
-    //     beds: 3,
-    //     baths: 2,
-    //     title: 'Modern home in city center in the heart of historic Los Angeles',
-    //     formattedPrice: '$1,900.00',
-    //     reviewCount: 34,
-    //     rating: 4,
-    //     },
-    //     {imageUrl: 'https://bit.ly/2Z4KKcF',
-    //     imageAlt: 'Rear view of modern home with pool',
-    //     beds: 3,
-    //     baths: 2,
-    //     title: 'Modern home in city center in the heart of historic Los Angeles',
-    //     formattedPrice: '$1,900.00',
-    //     reviewCount: 34,
-    //     rating: 4,
-    //     },
-    //     {imageUrl: 'https://bit.ly/2Z4KKcF',
-    //     imageAlt: 'Rear view of modern home with pool',
-    //     beds: 3,
-    //     baths: 2,
-    //     title: 'Modern home in city center in the heart of historic Los Angeles',
-    //     formattedPrice: '$1,900.00',
-    //     reviewCount: 34,
-    //     rating: 4,
-    //     },
-    //     {imageUrl: 'https://bit.ly/2Z4KKcF',
-    //     imageAlt: 'Rear view of modern home with pool',
-    //     beds: 3,
-    //     baths: 2,
-    //     title: 'Modern home in city center in the heart of historic Los Angeles',
-    //     formattedPrice: '$1,900.00',
-    //     reviewCount: 34,
-    //     rating: 4,
-    //     },
-    //     {imageUrl: 'https://bit.ly/2Z4KKcF',
-    //     imageAlt: 'Rear view of modern home with pool',
-    //     beds: 3,
-    //     baths: 2,
-    //     title: 'Modern home in city center in the heart of historic Los Angeles',
-    //     formattedPrice: '$1,900.00',
-    //     reviewCount: 34,
-    //     rating: 4,
-    //     },
-    //     {imageUrl: 'https://bit.ly/2Z4KKcF',
-    //     imageAlt: 'Rear view of modern home with pool',
-    //     beds: 3,
-    //     baths: 2,
-    //     title: 'Modern home in city center in the heart of historic Los Angeles',
-    //     formattedPrice: '$1,900.00',
-    //     reviewCount: 34,
-    //     rating: 4,
-    //     },
-    //     {imageUrl: 'https://bit.ly/2Z4KKcF',
-    //     imageAlt: 'Rear view of modern home with pool',
-    //     beds: 3,
-    //     baths: 2,
-    //     title: 'Modern home in city center in the heart of historic Los Angeles',
-    //     formattedPrice: '$1,900.00',
-    //     reviewCount: 34,
-    //     rating: 4,
-    //     },
-    //     {imageUrl: 'https://bit.ly/2Z4KKcF',
-    //     imageAlt: 'Rear view of modern home with pool',
-    //     beds: 3,
-    //     baths: 2,
-    //     title: 'Modern home in city center in the heart of historic Los Angeles',
-    //     formattedPrice: '$1,900.00',
-    //     reviewCount: 34,
-    //     rating: 4,
-    //     },
-    //     {imageUrl: 'https://bit.ly/2Z4KKcF',
-    //     imageAlt: 'Rear view of modern home with pool',
-    //     beds: 3,
-    //     baths: 2,
-    //     title: 'Modern home in city center in the heart of historic Los Angeles',
-    //     formattedPrice: '$1,900.00',
-    //     reviewCount: 34,
-    //     rating: 4,
-    //     },
-
-    // ]
+    
     return (
-        <Box w="90%" m="auto">
+        <Box w={['0em', '30em', '48em', '62em', '80em', '96em']} m="auto" p="10px">
           <SortingControls handleSort={handleSort}/>
 
-          <Grid gridTemplateColumns="repeat(3,1fr)" gap = "20px" p="20px">
+          <SimpleGrid columns={[1, 2, 3,]} gap="20px" p="20px">
         {
             products.map((property)=>{
-                return (<Box w="100%" h="500px" borderWidth='1px' borderRadius='20px' overflow='hidden' textAlign="center">
-                <Image src={property.image} alt={property.imageAlt} w="100%" h="300px" borderBottomRadius="20px"/>
+                return (<Box w="100%" h="550px" borderWidth='1px' borderRadius='20px' overflow='hidden' textAlign="center">
+                <Image src={property.image} alt={property.imageAlt} w="100%" h="300px" borderRadius="20px"/>
                 <Box p='6'>
                   
                   <Box
@@ -144,6 +53,7 @@ function Camping() {
                     as='h4'
                     lineHeight='tight'
                     noOfLines={1}
+                    fontSize="4xl"
                   >
                     {property.title}
                   </Box>
@@ -173,11 +83,11 @@ function Camping() {
                 <Button bg="tomato" color="white" onClick={()=>{
                     // alert(`Sorry! Page is not working.${property.id}`)
                     navigate(`/productDetails/${property.id}`)
-                }} >View Details</Button>
+                }} _hover={{ bg: 'green.300',color:"black" }} w="30%">View Details</Button>
               </Box>)
             })
         }
-        </Grid>
+        </SimpleGrid>
         </Box>
         )
 }

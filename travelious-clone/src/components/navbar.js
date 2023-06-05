@@ -1,6 +1,7 @@
 
 import {Box, Button, Flex,Text, Image,  Spacer,
- Center,} from '@chakra-ui/react'
+ Center,
+ Heading,} from '@chakra-ui/react'
   import {HamburgerIcon} from "@chakra-ui/icons"
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
@@ -15,11 +16,14 @@ export function NavbarCode(){
         <Flex bg="#122722" as="nav" align="center" justify="space-between" pr="60px" pl="60px" pb="30px">
         <Box>
             {/* //image logo */}
-            <Link to="/">
+            {/* <Link to="/">
             <Image 
 w="50%" h="10%"
-mt="5%" src="https://ov11-engine.flamingtext.com/netfu/tmp28002/coollogo_com-66201239.png"
+mt="5%" src="https://de6-engine.flamingtext.com/netfu/tmp28008/coollogo_com-844233.png"
 />
+            </Link> */}
+            <Link to="/">
+                <Heading mt="5%"  fontFamily={"cursive"} color="#e2660f" fontSize={["30px","40px"]} >O TRLVS</Heading>
             </Link>
 
         </Box>
@@ -231,7 +235,7 @@ mt="5%" src="https://ov11-engine.flamingtext.com/netfu/tmp28002/coollogo_com-662
 </li>
  {/* 6th a */}
 <li>
-<Link  _hover={{ textDecorationColor:"white"}}><Text fontWeight={"500"} color={"#dbdde5"} fontSize={["10px","15px","15px","20px"]}>Login</Text></Link>
+<Link to="/login"  _hover={{ textDecorationColor:"white"}}><Text fontWeight={"500"} color={"#dbdde5"} fontSize={["10px","15px","15px","20px"]}>Login</Text></Link>
 </li>
  {/* 7th a */}
 <li>
